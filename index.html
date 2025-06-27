@@ -6,60 +6,164 @@
   <title>Rajeshkumar R - Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f5f5f5;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .resume-wrapper {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(76, 81, 255, 0.15);
+      max-width: 850px;
+      width: 100%;
+      padding: 40px 36px 32px 36px;
+      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #e0e7ff;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+    .header h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      color: #4f46e5;
+    }
+    .header p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #555;
+      font-weight: 500;
+    }
+    .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin: 16px 0 0 0;
+      padding: 0;
+      list-style: none;
+      font-size: 1rem;
       color: #333;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .contact-list a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
     }
-    h1, h2, h3 {
-      color: #222;
+    .section-title {
+      color: #4f46e5;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+      text-align: left;
     }
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
-    .contact, .skills ul, .experience ul {
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       list-style: none;
       padding: 0;
+      margin: 0;
+      justify-content: flex-start;
     }
-    .skills ul li, .experience ul li {
-      background-color: #eee;
-      display: inline-block;
-      margin: 5px 10px 5px 0;
-      padding: 5px 10px;
+    .skills-list li {
+      background: #e0e7ff;
+      color: #222;
       border-radius: 4px;
+      padding: 6px 16px;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
     }
     .job {
-      margin-bottom: 20px;
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 16px 18px;
+      box-shadow: 0 2px 8px rgba(76, 81, 255, 0.04);
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    .job-title {
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #333;
+      margin: 0 0 4px 0;
+    }
+    .job-period {
+      font-size: 0.98rem;
+      color: #666;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+    .job ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #444;
+      font-size: 0.98rem;
+    }
+    .education, .awards {
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-top: 0;
+      text-align: left;
+    }
+    .education strong, .awards strong {
+      color: #4f46e5;
+    }
+    .awards ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    @media (max-width: 700px) {
+      .resume-wrapper {
+        padding: 18px 4vw;
+      }
+      .skills-list li {
+        font-size: 0.95rem;
+        padding: 5px 10px;
+      }
+      .job, .education, .awards {
+        padding: 10px 8px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Rajeshkumar R</h1>
-    <p><strong>Front-End Developer</strong></p>
-    <ul class="contact">
-      <li>Tirukovilur, Kallakuruchi Dist, Tamilnadu</li>
-      <li>📞 +91 80155 97626</li>
-      <li>✉️ rajeshkpm56@gmail.com</li>
-      <li><a href="https://linkedin.com/in/rajesh-kumar-r-a8a2b2101" target="_blank">LinkedIn Profile</a></li>
-    </ul>
+  <div class="resume-wrapper">
+    <div class="header">
+      <h1>Rajeshkumar R</h1>
+      <p>Front-End Developer</p>
+      <ul class="contact-list">
+        <li>Tirukovilur, Kallakuruchi Dist, Tamilnadu</li>
+        <li>📞 +91 80155 97626</li>
+        <li>✉️ rajeshkpm56@gmail.com</li>
+        <li><a href="https://linkedin.com/in/rajesh-kumar-r-a8a2b2101" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
 
     <div class="section">
-      <h2>Professional Summary</h2>
-      <p>
+      <div class="section-title">Professional Summary</div>
+      <p style="text-align:justify;">
         Passionate and self-motivated Front-End Developer with 9+ years of experience designing,
         developing, and managing responsive web applications. Proficient in Angular, JavaScript,
         TypeScript, HTML, CSS, and RESTful APIs. Adept in Agile environments, with a strong
@@ -67,9 +171,9 @@
       </p>
     </div>
 
-    <div class="section skills">
-      <h2>Skills</h2>
-      <ul>
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <ul class="skills-list">
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>Angular</li>
@@ -85,74 +189,70 @@
       </ul>
     </div>
 
-    <div class="section experience">
-      <h2>Professional Experience</h2>
-
-      <div class="job">
-        <h3>Senior Software Developer – Anubavam Technologies Pvt. Ltd.</h3>
-        <p><em>Feb 2023 – Present, Chennai</em></p>
-        <ul>
-          <li>Developed and optimized front-end modules using Angular and TypeScript.</li>
-          <li>Integrated RESTful APIs to ensure seamless data flow.</li>
-          <li>Improved application responsiveness and performance.</li>
-          <li>Participated in Agile ceremonies and code reviews.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Lead Engineer – HCL Technologies</h3>
-        <p><em>Dec 2020 – Dec 2022, Chennai</em></p>
-        <ul>
-          <li>Led development of “Dose IQ” with a 6-member team using Angular, Laravel, and TypeScript.</li>
-          <li>Worked on PCA product automation using Robot Framework.</li>
-          <li>Ensured code quality and performance in production environments.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Software Developer – Innoppl IT Services</h3>
-        <p><em>Mar 2019 – Nov 2020, Chennai</em></p>
-        <ul>
-          <li>Developed “Skylar” app for security operations using Angular and Laravel.</li>
-          <li>Created shift management modules and integrated cloud data systems.</li>
-          <li>Awarded “Star of the Month” – Oct 2019.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Programmer – Lapiz Digital Services</h3>
-        <p><em>Dec 2017 – Sep 2018, Chennai</em></p>
-        <ul>
-          <li>Worked on “HATSUN” project surveying farmers’ milk productivity.</li>
-          <li>Built data entry modules using Laravel and MySQL.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Web Developer – Synamen Thinklabs Pvt. Ltd.</h3>
-        <p><em>May 2016 – Dec 2017, Chennai</em></p>
-        <ul>
-          <li>Designed and developed “Healthy Home Healthy Family” application using Yii2.</li>
-          <li>Created health survey modules tailored for participants.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Web Developer – Awebon Technologies Pvt. Ltd.</h3>
-        <p><em>May 2015 – Apr 2016, Chennai</em></p>
-        <ul>
-          <li>Developed “ERICSON” CRM-based document workflow system using Laravel.</li>
-        </ul>
+    <div class="section">
+      <div class="section-title">Professional Experience</div>
+      <div class="experience-list">
+        <div class="job">
+          <div class="job-title">Senior Software Developer – Anubavam Technologies Pvt. Ltd.</div>
+          <div class="job-period">Feb 2023 – Present, Chennai</div>
+          <ul>
+            <li>Developed and optimized front-end modules using Angular and TypeScript.</li>
+            <li>Integrated RESTful APIs to ensure seamless data flow.</li>
+            <li>Improved application responsiveness and performance.</li>
+            <li>Participated in Agile ceremonies and code reviews.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">Lead Engineer – HCL Technologies</div>
+          <div class="job-period">Dec 2020 – Dec 2022, Chennai</div>
+          <ul>
+            <li>Led development of “Dose IQ” with a 6-member team using Angular, Laravel, and TypeScript.</li>
+            <li>Worked on PCA product automation using Robot Framework.</li>
+            <li>Ensured code quality and performance in production environments.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">Software Developer – Innoppl IT Services</div>
+          <div class="job-period">Mar 2019 – Nov 2020, Chennai</div>
+          <ul>
+            <li>Developed “Skylar” app for security operations using Angular and Laravel.</li>
+            <li>Created shift management modules and integrated cloud data systems.</li>
+            <li>Awarded “Star of the Month” – Oct 2019.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">Programmer – Lapiz Digital Services</div>
+          <div class="job-period">Dec 2017 – Sep 2018, Chennai</div>
+          <ul>
+            <li>Worked on “HATSUN” project surveying farmers’ milk productivity.</li>
+            <li>Built data entry modules using Laravel and MySQL.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">Web Developer – Synamen Thinklabs Pvt. Ltd.</div>
+          <div class="job-period">May 2016 – Dec 2017, Chennai</div>
+          <ul>
+            <li>Designed and developed “Healthy Home Healthy Family” application using Yii2.</li>
+            <li>Created health survey modules tailored for participants.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">Web Developer – Awebon Technologies Pvt. Ltd.</div>
+          <div class="job-period">May 2015 – Apr 2016, Chennai</div>
+          <ul>
+            <li>Developed “ERICSON” CRM-based document workflow system using Laravel.</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
+    <div class="section education">
+      <div class="section-title">Education</div>
       <p><strong>MCA – Agni College of Technology</strong>, 2011 – 2014</p>
     </div>
 
-    <div class="section">
-      <h2>Awards</h2>
+    <div class="section awards">
+      <div class="section-title">Awards</div>
       <ul>
         <li>Star of the Month, Innoppl IT Services, October 2019</li>
       </ul>
